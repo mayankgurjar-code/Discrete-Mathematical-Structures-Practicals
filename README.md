@@ -1,7 +1,7 @@
 
-# ─────────────────────────────────────────────
+# ───────────────────────
 # PRACTICAL 1 – SET OPERATIONS
-# ─────────────────────────────────────────────
+# ───────────────────────
 class SET:
     def __init__(self, elements):
         self.elements = list(set(elements))
@@ -76,9 +76,9 @@ def practical1():
             break
 
 
-# ─────────────────────────────────────────────
+# ────────────────────────────
 # PRACTICAL 2 – RELATION PROPERTIES
-# ─────────────────────────────────────────────
+# ────────────────────────────
 class RELATION:
     def __init__(self, matrix):
         self.m = matrix
@@ -124,9 +124,9 @@ def practical2():
     RELATION(matrix).classify()
 
 
-# ─────────────────────────────────────────────
+# ──────────────────────
 # PRACTICAL 3 – PERMUTATIONS
-# ─────────────────────────────────────────────
+# ──────────────────────
 def permute_no_repeat(digits, current=[]):
     if len(current) == len(digits):
         print("".join(current))
@@ -152,9 +152,9 @@ def practical3():
         permute_no_repeat(digits)
 
 
-# ─────────────────────────────────────────────
+# ───────────────────────────────
 # PRACTICAL 4 – x1 + x2 + ... + xn = C
-# ─────────────────────────────────────────────
+# ───────────────────────────────
 def find_solutions(n, C, current=[]):
     if len(current) == n:
         if sum(current) == C:
@@ -169,9 +169,9 @@ def practical4():
     find_solutions(n, C)
 
 
-# ─────────────────────────────────────────────
+# ──────────────────────────────
 # PRACTICAL 5 – POLYNOMIAL EVALUATION
-# ─────────────────────────────────────────────
+# ──────────────────────────────
 def practical5():
     print("Enter coefficients from lowest to highest power.")
     print("Example: 4n^2 + 2n + 9  =>  enter: 9 2 4")
@@ -181,9 +181,9 @@ def practical5():
     print(f"f({n}) = {result}")
 
 
-# ─────────────────────────────────────────────
+# ───────────────────────────────
 # PRACTICAL 6 – IS THE GRAPH COMPLETE?
-# ─────────────────────────────────────────────
+# ───────────────────────────────
 def practical6():
     v = int(input("Number of vertices: "))
     matrix = [list(map(int, input(f"Row {i+1}: ").split())) for i in range(v)]
@@ -194,9 +194,9 @@ def practical6():
     print("Complete Graph: YES" if complete else "Complete Graph: NO")
 
 
-# ─────────────────────────────────────────────
+# ───────────────────────────────
 # PRACTICAL 7 – IN-DEGREE & OUT-DEGREE
-# ─────────────────────────────────────────────
+# ───────────────────────────────
 def practical7():
     v = int(input("Number of vertices: "))
     matrix = [list(map(int, input(f"Row {i+1}: ").split())) for i in range(v)]
@@ -207,9 +207,9 @@ def practical7():
         print(f"{i+1:<10}{in_:<15}{out}")
 
 
-# ─────────────────────────────────────────────
+# ────────
 # MAIN MENU
-# ─────────────────────────────────────────────
+# ────────
 practicals = {
     '1': ("Set Operations",           practical1),
     '2': ("Relation Properties",      practical2),
